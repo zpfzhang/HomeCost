@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="masterEntities">
+    <EntitySetMapping Name="Home_Cost">
+      <EntityTypeMapping TypeName="masterModel.Home_Cost">
+        <MappingFragment StoreEntitySet="Home_Cost">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CostDate" ColumnName="CostDate" />
+          <ScalarProperty Name="CostType" ColumnName="CostType" />
+          <ScalarProperty Name="CostAmount" ColumnName="CostAmount" />
+          <ScalarProperty Name="CostDesc" ColumnName="CostDesc" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

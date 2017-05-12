@@ -1,0 +1,131 @@
+﻿@{
+    ViewBag.Title = "Cost Input";
+}
+
+@model HomeCost.Models.Home_Cost
+
+@using (Html.BeginForm("Save", "Home", FormMethod.Post, new { id = "formInfo" }))
+{
+    <div class="row">
+        <div class="col-md-4">
+            <h2>花销日期</h2>
+            @Html.TextBoxFor(model => model.CostDate, new { id = "date_yy-mm-dd", Value = DateTime.Now.ToString("yyyy-MM-dd"), @class = "form-control required" })
+        </div>
+        <div class="col-md-4">
+            <h2>花销类型</h2>
+            @Html.TextBoxFor(model => model.CostType, new { id = "CostType", @class = "form-control required" })
+        </div>
+        <div class="col-md-4">
+            <h2>金额</h2>
+            @Html.TextBoxFor(model => model.CostAmount, new { id = "CostAmt", @class = "form-control required" })
+        </div>
+        <div class="col-md-4">
+            <h2>说明</h2>
+            @Html.TextBoxFor(model => model.CostDesc, new { id = "CostDesc", @class = "form-control required" })
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <button type="button" id="CancelFormButton" class="btn btn-primary operateButton">取消</button>
+            <button type="button" id="SaveFormButton" class="btn btn-primary operateButton">保存</button>
+        </div>
+    </div>
+}
+
+<script>
+
+    $("#date_yy-mm-dd").click(function (e) {
+        WdatePicker();
+    });
+
+    $("#SaveFormButton").click(function(){
+        //var newCostInfo =$("#formInfo").formSerialize();
+        //$.loading(true, "正在处理中，请稍后...");
+        $.ajax({
+            url: $("#formInfo").attr("action"),
+            data: { CostDate: $("#date_yy-mm-dd").val(), CostType: $("#CostType").val(), CostAmount: $("#CostAmt").val(), CostDesc: $("#CostDesc").val() },//newCostInfo,
+            type: "post",
+            dataType: 'json',
+            success: function (r) {
+                //if (r.state == "success") {
+                //    $.modalMsg(r.message);
+                //    $.loading(false);
+                //}
+                //else {
+                //    $.modalAlert(r.message);
+                //    $.loading(false);
+                //}
+                alert("数据提交成功");
+            }
+           , error: function (r) {
+               //$.ajaxErrorProcess(r);
+               //$.loading(false);
+               alert("数据提交失败");
+           }
+        });
+    })
+
+    $.fn.formSerialize = function (formdate) {
+        var element = $(this);
+        if (!!formdate) {
+            for (var key in formdate) {
+                var $id = element.find('#' + key);
+                var value = $.trim(formdate[key]).replace(/&nbsp;/g, '');
+                var type = $id.attr('type');
+                if ($id.hasClass("select2-hidden-accessible")) {
+                    type = "select";
+                }
+                switch (type) {
+                    case "checkbox":
+                        if (value == "true") {
+                            $id.attr("checked", 'checked');
+                        } else {
+                            $id.removeAttr("checked");
+                        }
+                        break;
+                    case "select":
+                        $id.val(value).trigger("change");
+                        break;
+                    default:
+                        $id.val(value);
+                        break;
+                }
+            };
+            return false;
+        }
+        var postdata = {};
+        element.find('input,select,textarea').each(function (r) {
+            var $this = $(this);
+            var name = $this.attr('name');
+            var type = $this.attr('type');
+            if (name == undefined) {
+                return true;
+            }
+            switch (type) {
+                case "checkbox":
+                    postdata[name] = $this.is(":checked");
+                    break;
+                case "radio":
+                    if ($this.is(":checked")) {
+                        postdata[name] = $this.val();
+                    }
+
+                    break;
+                default:
+                    var value = $this.val() == "" ? "&nbsp;" : $this.val();
+                    if (!$.request("keyValue") && (!!value)) {
+                        value = value.replace(/&nbsp;/g, '');
+                    }
+                    postdata[name] = value;
+                    break;
+            }
+        });
+        if ($('[name=__RequestVerificationToken]').length > 0) {
+            postdata["__RequestVerificationToken"] = $('[name=__RequestVerificationToken]').val();
+        }
+        return postdata;
+    };
+
+</script>
