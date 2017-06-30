@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "HomeCostLogin";
+}
+
+<h3>系统登录</h3>
+    <table class="tablezpf" >
+        <tr>
+            <td class="tdzpf">用户名</td>
+            <td class="tdzpf"><input type="text" id="LoginAccount" /></td>
+        </tr>
+        <tr>
+            <td class="tdzpf">密码 </td>
+            <td class="tdzpf"><input type="password" id="UserPwd" /></td>
+        </tr>
+        <tr>
+            <td class="tdzpf"></td>
+            <td class="tdzpf"><button type="button" id="LoginButton" class="btn btn-primary operateButton">登录</button></td>
+        </tr>
+    </table>
+
+
+<script>
+    $("#LoginButton").click(function () {
+        $.ajax({
+            url: "/Home/HomeUserValid",
+            data: { userLoginAccount: $("#LoginAccount").val().trim(), userPwd: $("#UserPwd").val().trim() },
+            type: "post",
+            dataType: 'json',
+            success: function (option) {
+                if (option == "success") {
+                    window.location = "/Home/HomeCost";
+                } else {
+                    alert("登陆失败");
+                }
+                },
+            error: function (msg) {
+               alert("登陆失败");
+           }
+        });
+    })
+</script>
+

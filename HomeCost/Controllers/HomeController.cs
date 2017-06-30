@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.WebPages;
 using HomeCost.Models;
 
 namespace HomeCost.Controllers
@@ -16,14 +18,14 @@ namespace HomeCost.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "The system is used for input the family cost and will send out the cost list to mailbox daily";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Please check below contact info:";
 
             return View();
         }
@@ -36,24 +38,98 @@ namespace HomeCost.Controllers
 
         public JsonResult Save(HomeCost.Models.Home_Cost curHomeCost)
         {
-            String result;
+            String result="error";
             HomeCostHandle curHomeCostHandle = new HomeCostHandle();
             try
             {
                 // _ITProjectService.SaveNewProjectInfo(projectInfo);
-                curHomeCostHandle.SaveCostInfoToDB(curHomeCost);
-                result = "保存成功";
+                var curUser = AuthoriyService.GetUser();
+                if (curUser.UserLoginAccount.IsEmpty())
+                {
+                    result = "errorNoUser";
+                }
+                else
+                {
+
+                    curHomeCost.CreateByUserID = curUser.UserID;
+                    curHomeCost.CreateByUserAccount = curUser.UserLoginAccount;
+                    curHomeCost.CreateDate = DateTime.Now;
+                    curHomeCostHandle.SaveCostInfoToDB(curHomeCost);
+                    result = "success";
+                }
+
                 return Json(result);
             }
             catch (Exception ex)
             {
-                result = "保存失败" + ex.Message;
+                AuthoriyService.LogInfo(ex.Message,"Save Cost");
                 return Json(result);
             }
         }
         public ActionResult AngularPage()
         {
             return View();
+        }
+
+        //[HttpPost]
+        public ActionResult HomeCostLogin()
+        {
+            ViewBag.Message = "Home Cost Login Page.";
+            return View();
+        }
+
+
+        public ActionResult HomeCostLogOff()
+        {
+            AuthoriyService.SetUser(null);
+            return View("HomeCostLogin");
+        }
+        public JsonResult HomeUserValid(string userLoginAccount, string userPwd)
+        {
+            String result;
+            HomeCostHandle curHomeCostHandle = new HomeCostHandle();
+            try
+            {
+                if (AuthoriyService.ValidUser(userLoginAccount, userPwd))
+                {
+                    result = "success";
+                }
+                else
+                {
+                    result = "error";
+                }
+
+                return Json(result);
+            }
+            catch (Exception ex)
+            {
+                result = "error" + ex.Message;
+                AuthoriyService.LogInfo(ex.Message,"User Valid");
+                return Json(result);
+            }
+        }
+
+        public JsonResult GetCostTypeList()
+        {
+
+            HomeCostHandle curHomeCostHandle = new HomeCostHandle();
+            var costList = curHomeCostHandle.GetCostTypeList();
+            StringBuilder listInfo = new StringBuilder();
+            listInfo.Append("[");
+            foreach (var item in costList)
+            {
+                listInfo.Append("{name: '" + item.CostTypeName + "', value: '" + item.CostTypeID + "'},");
+            }
+            return Json(listInfo.ToString().TrimEnd(',') + "]", JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult ExportToExcel()
+        {
+            String result;
+            ADOHandle curAdoHandle = new ADOHandle();
+            curAdoHandle.GetHomeCost();
+            result = "{\"result\":\"true\"}"; 
+            return Json(result);
         }
     }
 }

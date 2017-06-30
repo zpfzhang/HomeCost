@@ -1,0 +1,14 @@
+D:\Study\HomeCost\HomeCostWindowsService\bin\Debug\HomeCostWindowsService.exe.config
+D:\Study\HomeCost\HomeCostWindowsService\bin\Debug\HomeCostWindowsService.exe
+D:\Study\HomeCost\HomeCostWindowsService\bin\Debug\HomeCostWindowsService.pdb
+D:\Study\HomeCost\HomeCostWindowsService\obj\Debug\HomeCostWindowsService.csprojResolveAssemblyReference.cache
+D:\Study\HomeCost\HomeCostWindowsService\obj\Debug\HomeCostWindowsService.ProjectInstaller.resources
+D:\Study\HomeCost\HomeCostWindowsService\obj\Debug\HomeCostWindowsService.csproj.GenerateResource.Cache
+D:\Study\HomeCost\HomeCostWindowsService\obj\Debug\HomeCostWindowsService.exe
+D:\Study\HomeCost\HomeCostWindowsService\obj\Debug\HomeCostWindowsService.pdb
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe.config
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.pdb
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\Install.bat
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\Uninstall.bat
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\log4net.config

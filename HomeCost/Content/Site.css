@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*set my special table align right*/
+.tdzpf {
+    text-align: right;
+    border:solid #add9c0; border-width:0px 1px 1px 0px;
+}
+.tablezpf {
+    border:solid #add9c0; border-width:1px 0px 0px 1px;
+}

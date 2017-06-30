@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCost", "HomeCost\HomeCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCost.Tests", "HomeCost.Tests\HomeCost.Tests.csproj", "{EC58259C-770D-4A18-B6BD-2FFFB687F30A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCostWindowsService", "HomeCostWindowsService\HomeCostWindowsService.csproj", "{FFDED0BD-AA37-4EAD-A0B2-31890D2BF468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceTestUI", "WindowsServiceTestUI\WindowsServiceTestUI.csproj", "{5AB63E3E-9A51-4ED9-8253-46C938ABA640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationQuartz", "ConsoleApplicationQuartz\ConsoleApplicationQuartz.csproj", "{EFE0DD8E-28BE-4CDB-99F0-D48E6625DCBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{EC58259C-770D-4A18-B6BD-2FFFB687F30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC58259C-770D-4A18-B6BD-2FFFB687F30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC58259C-770D-4A18-B6BD-2FFFB687F30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDED0BD-AA37-4EAD-A0B2-31890D2BF468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDED0BD-AA37-4EAD-A0B2-31890D2BF468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDED0BD-AA37-4EAD-A0B2-31890D2BF468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDED0BD-AA37-4EAD-A0B2-31890D2BF468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB63E3E-9A51-4ED9-8253-46C938ABA640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB63E3E-9A51-4ED9-8253-46C938ABA640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB63E3E-9A51-4ED9-8253-46C938ABA640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB63E3E-9A51-4ED9-8253-46C938ABA640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE0DD8E-28BE-4CDB-99F0-D48E6625DCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE0DD8E-28BE-4CDB-99F0-D48E6625DCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE0DD8E-28BE-4CDB-99F0-D48E6625DCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE0DD8E-28BE-4CDB-99F0-D48E6625DCBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

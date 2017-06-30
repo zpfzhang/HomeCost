@@ -1,0 +1,16 @@
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\WindowsServiceTestUI.exe.config
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\WindowsServiceTestUI.exe
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\WindowsServiceTestUI.pdb
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI.csprojResolveAssemblyReference.cache
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\MainWindow.g.cs
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\App.g.cs
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI_MarkupCompile.cache
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI_MarkupCompile.lref
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\MainWindow.baml
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI.g.resources
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI.Properties.Resources.resources
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI.csproj.GenerateResource.Cache
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI.exe
+D:\Study\HomeCost\WindowsServiceTestUI\obj\Debug\WindowsServiceTestUI.pdb
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\log4net.dll
+D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\log4net.xml

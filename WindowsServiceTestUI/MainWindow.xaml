@@ -1,0 +1,18 @@
+﻿<Window x:Class="WindowsServiceTestUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsServiceTestUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="316.349" Width="830.778">
+    <Grid Margin="0,0,74,51">
+        <Button x:Name="StartBtn" Content="Start" HorizontalAlignment="Left" Margin="311,32,0,0" VerticalAlignment="Top" Width="178" Height="62" Click="StartBtn_Click"/>
+        <Button x:Name="StopBtn" Content="Stop" HorizontalAlignment="Left" Margin="311,139,0,0" VerticalAlignment="Top" Width="178" Height="62" RenderTransformOrigin="0.53,2.451" Click="StopBtn_Click"/>
+        <Button x:Name="InstallBtn" Content="Install" HorizontalAlignment="Left" Margin="37,32,0,0" VerticalAlignment="Top" Width="178" Height="62" Click="InstallBtn_Click"/>
+        <Button x:Name="UnInstallBtn" Content="UnInstall" HorizontalAlignment="Left" Margin="37,139,0,0" VerticalAlignment="Top" Width="178" Height="62" RenderTransformOrigin="0.53,2.451" Click="UnInstallBtn_Click"/>
+        <Button x:Name="PauseBtn" Content="Pause" HorizontalAlignment="Left" Margin="547,32,0,0" VerticalAlignment="Top" Width="178" Height="62" Click="PauseBtn_Click"/>
+        <Button x:Name="StatusBtn" Content="Status" HorizontalAlignment="Left" Margin="547,139,0,0" VerticalAlignment="Top" Width="178" Height="62" Click="StatusBtn_Click"/>
+
+    </Grid>
+</Window>

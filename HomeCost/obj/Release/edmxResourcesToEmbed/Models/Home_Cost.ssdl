@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cost_Type">
+    <Key>
+      <PropertyRef Name="CostTypeID" />
+    </Key>
+    <Property Name="CostTypeID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CostTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateUserName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Home_Cost">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CostDate" Type="date" Nullable="false" />
+    <Property Name="CostType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CostAmount" Type="float" Nullable="false" />
+    <Property Name="CostDesc" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateByUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateByUserAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Home_User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserLoginAccount" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPwd" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="masterModelStoreContainer">
+    <EntitySet Name="Cost_Type" EntityType="Self.Cost_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Home_Cost" EntityType="Self.Home_Cost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Home_User" EntityType="Self.Home_User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

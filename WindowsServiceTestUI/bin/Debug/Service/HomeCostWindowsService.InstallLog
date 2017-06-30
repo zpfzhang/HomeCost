@@ -1,0 +1,118 @@
+﻿Installing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Installing service HomeCostService...
+Service HomeCostService has been successfully installed.
+Creating EventLog source HomeCostService in log Application...
+Committing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Uninstalling assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Removing EventLog source HomeCostService.
+Service HomeCostService is being removed from the system...
+Service HomeCostService was successfully removed from the system.
+Installing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Installing service HomeCostService...
+Service HomeCostService has been successfully installed.
+Creating EventLog source HomeCostService in log Application...
+Committing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Uninstalling assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Removing EventLog source HomeCostService.
+Service HomeCostService is being removed from the system...
+Service HomeCostService was successfully removed from the system.
+Installing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Installing service HomeCostService...
+Service HomeCostService has been successfully installed.
+Creating EventLog source HomeCostService in log Application...
+Committing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Uninstalling assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Removing EventLog source HomeCostService.
+Service HomeCostService is being removed from the system...
+Service HomeCostService was successfully removed from the system.
+Installing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Installing service HomeCostService...
+Service HomeCostService has been successfully installed.
+Creating EventLog source HomeCostService in log Application...
+Committing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Uninstalling assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Removing EventLog source HomeCostService.
+Service HomeCostService is being removed from the system...
+Service HomeCostService was successfully removed from the system.
+Installing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Installing service HomeCostService...
+Service HomeCostService has been successfully installed.
+Creating EventLog source HomeCostService in log Application...
+Committing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Uninstalling assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Removing EventLog source HomeCostService.
+Service HomeCostService is being removed from the system...
+Service HomeCostService was successfully removed from the system.
+Installing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe
+Installing service HomeCostService...
+Service HomeCostService has been successfully installed.
+Creating EventLog source HomeCostService in log Application...
+Committing assembly 'D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.InstallLog
+   assemblypath = D:\Study\HomeCost\WindowsServiceTestUI\bin\Debug\Service\HomeCostWindowsService.exe

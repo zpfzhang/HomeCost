@@ -1,0 +1,7 @@
+2017-06-26 17:43:45,920 [1] INFO  ConsoleApplicationQuartz.Program - 系统启动
+ ConsoleApplicationQuartz.Programname2017-06-26 17:43:45,957 [1] INFO  ConsoleApplicationQuartz.Program - 设置job和trigger
+ ConsoleApplicationQuartz.Programname2017-06-26 17:44:45,965 [1] INFO  ConsoleApplicationQuartz.Program - 系统关闭
+ ConsoleApplicationQuartz.Programname2017-06-26 17:52:36,479 [1] INFO  ConsoleApplicationQuartz.Program - 系统启动
+ ConsoleApplicationQuartz.Programname2017-06-26 17:52:36,508 [1] INFO  ConsoleApplicationQuartz.Program - 设置job和trigger
+ ConsoleApplicationQuartz.Programname2017-06-26 17:52:46,513 [1] INFO  ConsoleApplicationQuartz.Program - 系统关闭
+ ConsoleApplicationQuartz.Programname

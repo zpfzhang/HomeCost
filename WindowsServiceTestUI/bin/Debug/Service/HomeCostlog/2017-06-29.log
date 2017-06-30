@@ -1,0 +1,3 @@
+2017-06-29 15:26:13,750 [DefaultQuartzScheduler_Worker-2] INFO  HomeCostWindowsService.ExportAndMailJob - Send mail success2017-06-29 15:26:13
+ HomeCostWindowsService.ExportAndMailJobname2017-06-29 15:26:13,758 [DefaultQuartzScheduler_Worker-2] INFO  HomeCostWindowsService.ExportAndMailJob - Export and Send mails-2017-06-29 15:26:13:7580
+ HomeCostWindowsService.ExportAndMailJobname
