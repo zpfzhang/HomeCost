@@ -7,9 +7,9 @@ using Microsoft.Office.Interop;
 
 namespace HomeCost.Models
 {
-    public class HomeCostHandle
+    public class HomeCostHandle: IHomeCostHandle
     {
-        public void SaveCostInfoToDB(HomeCost.Models.Home_Cost curCost)
+        public void SaveCostInfoToDb(HomeCost.Models.Home_Cost curCost)
         {
             using (masterEntities curDBContext = new masterEntities())
             {

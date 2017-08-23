@@ -133,7 +133,8 @@ namespace HomeCostWindowsService
             String mailTo = ConfigurationManager.AppSettings["MailTo"];
             String mailTo2 = ConfigurationManager.AppSettings["MailTo2"];
             MailMessage mm = new MailMessage(mailFrom, mailTo);
-            mm.CC.Add(mailTo2);
+            if(mailTo2.Length>0)
+                mm.CC.Add(mailTo2);
             mm.Subject = "家庭收支统计-"+DateTime.Now.ToString("yyyy-MM-dd");
             mm.Body = "看看我们花了多少银子吧.....";
             Attachment dataAttachment = new Attachment(strAttachfile);

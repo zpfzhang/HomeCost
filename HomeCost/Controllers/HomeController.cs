@@ -39,7 +39,7 @@ namespace HomeCost.Controllers
         public JsonResult Save(HomeCost.Models.Home_Cost curHomeCost)
         {
             String result="error";
-            HomeCostHandle curHomeCostHandle = new HomeCostHandle();
+            IHomeCostHandle curHomeCostHandle = new HomeCostHandle();
             try
             {
                 // _ITProjectService.SaveNewProjectInfo(projectInfo);
@@ -50,11 +50,10 @@ namespace HomeCost.Controllers
                 }
                 else
                 {
-
                     curHomeCost.CreateByUserID = curUser.UserID;
                     curHomeCost.CreateByUserAccount = curUser.UserLoginAccount;
                     curHomeCost.CreateDate = DateTime.Now;
-                    curHomeCostHandle.SaveCostInfoToDB(curHomeCost);
+                    curHomeCostHandle.SaveCostInfoToDb(curHomeCost);
                     result = "success";
                 }
 
@@ -87,7 +86,7 @@ namespace HomeCost.Controllers
         public JsonResult HomeUserValid(string userLoginAccount, string userPwd)
         {
             String result;
-            HomeCostHandle curHomeCostHandle = new HomeCostHandle();
+            IHomeCostHandle curHomeCostHandle = new HomeCostHandle();
             try
             {
                 if (AuthoriyService.ValidUser(userLoginAccount, userPwd))
@@ -112,7 +111,7 @@ namespace HomeCost.Controllers
         public JsonResult GetCostTypeList()
         {
 
-            HomeCostHandle curHomeCostHandle = new HomeCostHandle();
+            IHomeCostHandle curHomeCostHandle = new HomeCostHandle();
             var costList = curHomeCostHandle.GetCostTypeList();
             StringBuilder listInfo = new StringBuilder();
             listInfo.Append("[");
